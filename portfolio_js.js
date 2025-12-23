@@ -1,3 +1,61 @@
+// Certifications data - Easy to add new certifications
+const certifications = [
+    {
+        name: "ISTQB Certified Tester Foundation Level",
+        issuer: "ISTQB",
+        date: "2025",
+        credentialId: "251110033",
+        icon: "fa-check-circle",
+        verified: true,
+        verifyLink: "#"  // Replace with actual verification link
+    },
+    {
+        name: "Microsoft Certified: Data Analyst Associate",
+        issuer: "Microsoft",
+        date: "2024",
+        credentialId: "",
+        icon: "fa-chart-bar",
+        verified: false,
+        verifyLink: ""
+    },
+    {
+        name: "Informatica PowerCenter Developer",
+        issuer: "Informatica",
+        date: "2024",
+        credentialId: "",
+        icon: "fa-exchange-alt",
+        verified: false,
+        verifyLink: ""
+    },
+    {
+        name: "SQL Server Database Development",
+        issuer: "Microsoft",
+        date: "2023",
+        credentialId: "",
+        icon: "fa-database",
+        verified: false,
+        verifyLink: ""
+    },
+    {
+        name: "Business Intelligence Specialist",
+        issuer: "ITI",
+        date: "2023",
+        credentialId: "",
+        icon: "fa-chart-line",
+        verified: false,
+        verifyLink: ""
+    },
+    {
+        name: "Python for Data Science",
+        issuer: "Coursera",
+        date: "2023",
+        credentialId: "",
+        icon: "fa-python",
+        verified: false,
+        verifyLink: ""
+    }
+];
+
 // Projects data - Easy to add new projects
 const projects = [
     {
@@ -43,6 +101,47 @@ const projects = [
         link: "https://github.com/ahmedtaha89/PortfolioProjects.git"
     }
 ];
+
+// Load certifications dynamically
+function loadCertifications() {
+    const container = document.getElementById('certificationsContainer');
+    certifications.forEach(cert => {
+        const certCard = document.createElement('div');
+        certCard.className = 'certification-card';
+        
+        const verifiedBadge = cert.verified ? 
+            `<div class="cert-badge"><i class="fas fa-check-circle"></i> Verified</div>` : '';
+        
+        const credentialSection = cert.credentialId ? 
+            `<div class="cert-id"><i class="fas fa-id-card"></i> ID: ${cert.credentialId}</div>` : '';
+        
+        const verifyButton = cert.verifyLink ? 
+            `<a href="${cert.verifyLink}" target="_blank" class="cert-link">
+                <i class="fas fa-external-link-alt"></i> Verify
+            </a>` : '';
+        
+        certCard.innerHTML = `
+            ${verifiedBadge}
+            <div class="cert-icon">
+                <i class="fas ${cert.icon}"></i>
+            </div>
+            <div class="cert-content">
+                <h3>${cert.name}</h3>
+                <div class="cert-issuer">
+                    <i class="fas fa-award"></i>
+                    ${cert.issuer}
+                </div>
+                <div class="cert-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    Issued: ${cert.date}
+                </div>
+                ${credentialSection}
+            </div>
+            ${verifyButton ? `<div class="cert-footer">${verifyButton}</div>` : ''}
+        `;
+        container.appendChild(certCard);
+    });
+}
 
 // Load projects dynamically
 function loadProjects() {
@@ -102,5 +201,6 @@ document.getElementById('downloadCV').addEventListener('click', function(e) {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
+    loadCertifications();
     loadProjects();
 });
