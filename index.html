@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Taha - BI & ETL Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Ahmed Taha - BI & ETL Developer | Data Warehouse Specialist</title>
+    <meta name="description" content="Ahmed Taha - Junior BI & ETL Developer specializing in SQL, Power BI, Data Warehousing, and Business Intelligence solutions. View my portfolio of data projects.">
+    <meta name="keywords" content="BI Developer, ETL Developer, SQL, Power BI, Data Warehouse, Business Intelligence, Ahmed Taha, Data Analysis, Python">
+    <meta name="author" content="Ahmed Taha">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ahmed Taha - BI & ETL Developer">
+    <meta property="og:description" content="Junior BI & ETL Developer specializing in Data Warehousing and Business Intelligence">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedtaha89.github.io/My-Portfolio/">
+    
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    
+    <!-- Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio_css_v2.css">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -15,19 +36,24 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <i class="fas fa-bars mobile-menu"></i>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
-            <div class="hero-content">
+            <div class="hero-content fade-in">
                 <h1>Ahmed Taha</h1>
                 <div class="subtitle">Junior BI & ETL Developer</div>
                 <p class="description">Transforming data into actionable insights through ETL processes, data warehousing, and business intelligence solutions. Specialized in SQL, Power BI, and Informatica PowerCenter.</p>
@@ -37,17 +63,45 @@
                     <a href="#" id="downloadCV" class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ahmed-taha-QA" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/ahmedtaha89" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/201017363740" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.novypro.com/profile_projects/ahmedtaha" target="_blank">
-                     <img src="favicon.ico" alt="NovyPro" style="width: 24px; height: 24px;">
-</a>
+                    <a href="https://www.linkedin.com/in/ahmed-taha-QA" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ahmedtaha89" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/201017363740" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.novypro.com/profile_projects/ahmedtaha" target="_blank" aria-label="NovyPro">
+                        <img src="novypro.ico" alt="NovyPro" style="width: 24px; height: 24px;">
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image fade-in">
                 <div class="hero-visual">
-                    <img src="my-photo3.jpg" alt="Ahmed Taha">
+                    <img src="my-photo3.jpg" alt="Ahmed Taha - BI Developer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <i class="fas fa-certificate"></i>
+                    <h3 class="stat-number" data-target="11">0</h3>
+                    <p>Certifications</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <i class="fas fa-code"></i>
+                    <h3 class="stat-number" data-target="8">0</h3>
+                    <p>Technologies</p>
+                </div>
+                <div class="stat-card fade-in">
+                    <i class="fas fa-clock"></i>
+                    <h3 class="stat-number" data-target="1">0</h3>
+                    <p>Years Experience</p>
                 </div>
             </div>
         </div>
@@ -56,10 +110,10 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">Technologies and tools I work with</p>
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            <p class="section-subtitle fade-in">Technologies and tools I work with</p>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-exchange-alt"></i> ETL & Data Integration</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Informatica PowerCenter</span>
@@ -68,7 +122,7 @@
                         <span class="skill-tag">Data Warehousing</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-database"></i> Database & SQL</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">SQL Server</span>
@@ -77,7 +131,7 @@
                         <span class="skill-tag">Data Modeling</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-chart-line"></i> BI & Visualization</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Power BI</span>
@@ -87,7 +141,7 @@
                         <span class="skill-tag">Excel</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-code"></i> Programming</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
@@ -95,7 +149,7 @@
                         <span class="skill-tag">Java</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-vial"></i> Testing & QA</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">ISTQB</span>
@@ -104,7 +158,7 @@
                         <span class="skill-tag">API Testing</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category fade-in">
                     <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
@@ -117,54 +171,53 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <p class="section-subtitle">Professional credentials and achievements</p>
-            <div class="certifications-grid" id="certificationsContainer">
-                <!-- Certifications will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Recent work showcasing my skills in BI, ETL, and Data Analysis</p>
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <p class="section-subtitle fade-in">Recent work showcasing my skills in BI, ETL, and Data Analysis</p>
+            
+            <!-- Project Filters -->
+            <div class="project-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="bi">BI & Analytics</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="etl">ETL</button>
+            </div>
+
             <div class="projects-grid" id="projectsContainer">
                 <!-- Projects will be dynamically loaded here -->
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- Experience Section -->
     <section id="experience">
         <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <p class="section-subtitle">My professional journey</p>
+            <h2 class="section-title fade-in">Experience & Education</h2>
+            <p class="section-subtitle fade-in">My professional journey</p>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item fade-in">
                     <div class="timeline-content">
                         <h3>Software Testing Internship</h3>
-                        <div class="timeline-date">ITI | July 2025 - November 2025</div>
+                        <div class="timeline-date"><i class="fas fa-calendar"></i> ITI | July 2025 - November 2025</div>
                         <p>Applied SDLC/STLC principles, Agile practices, and ISTQB concepts. Designed and executed test cases, reported defects, and ensured software quality across web applications.</p>
                     </div>
                     <div></div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in">
                     <div></div>
                     <div class="timeline-content">
                         <h3>Bachelor's in Computer Science</h3>
-                        <div class="timeline-date">Kafr El-Sheikh University | 2020 - 2024</div>
+                        <div class="timeline-date"><i class="fas fa-calendar"></i> Kafr El-Sheikh University | 2020 - 2024</div>
                         <p>Information Systems Specialization - Grade: Very Good. Graduation Project: KFS University Admission & Transfer System (Grade: A+)</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in">
                     <div class="timeline-content">
                         <h3>Business Intelligence Trainee</h3>
-                        <div class="timeline-date">ITI Summer Internship | Aug 2023 - Oct 2023</div>
+                        <div class="timeline-date"><i class="fas fa-calendar"></i> ITI Summer Internship | Aug 2023 - Oct 2023</div>
                         <p>Completed BI training covering data analysis, visualization, and database fundamentals. Worked with Power BI, SQL, and Excel to build dashboards.</p>
                     </div>
                     <div></div>
@@ -173,26 +226,64 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title fade-in">Certifications</h2>
+            <p class="section-subtitle fade-in">Professional credentials and achievements</p>
+            <div class="certifications-grid" id="certificationsContainer">
+                <!-- Certifications will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Let's Work Together</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.7);">Feel free to reach out for opportunities or collaborations</p>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <a href="mailto:ahmedtaha74a@gmail.com">ahmedtaha74a@gmail.com</a>
+            <h2 class="section-title fade-in" style="color: white;">Let's Work Together</h2>
+            <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.7);">Feel free to reach out for opportunities or collaborations</p>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container fade-in">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="formStatus" class="form-status"></div>
                 </div>
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <a href="tel:+201017363740">+20 101 736 3740</a>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>El Nozha, Cairo, Egypt</p>
+
+                <!-- Contact Info -->
+                <div class="contact-grid">
+                    <div class="contact-card fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:ahmedtaha74a@gmail.com">ahmedtaha74a@gmail.com</a>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+201017363740">+20 101 736 3740</a>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>El Nozha, Cairo, Egypt</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,8 +292,17 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ahmed Taha. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/ahmedtaha89" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ahmed-taha-QA" target="_blank">LinkedIn</a>
+        </div>
     </footer>
 
-    <script src="portfolio_js.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
