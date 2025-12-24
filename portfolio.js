@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadBtn.addEventListener('click', function(e) {
             e.preventDefault();
             
-            const pdfFileName = 'Ahmed_Taha_BI_Data_Analysis_CV.pdf';
+            const pdfFileName = 'Ahmed Taha BI & ETL Developer CV.pdf';
             
             const link = document.createElement('a');
             link.href = pdfFileName;
