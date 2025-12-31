@@ -3,13 +3,23 @@
 // Certifications data
 const certifications = [
     {
+    name: "Data Warehouse - The Ultimate Guide",
+    issuer: "Udemy",
+    date: "December 2025",
+    credentialId: "UC-cff4947f-cf75-407e-8c5e-bc745537c8ae",
+    icon: "fa-warehouse",
+    verified: true,
+    verifyLink: "https://www.udemy.com/certificate/UC-cff4947f-c175-407e-8c5e-bc745537c8ae/",
+    category: ["bi", "etl", "sql"]
+},
+    {
         name: "ISTQB Certified Tester Foundation Level",
         issuer: "ISTQB",
         date: "2025",
         credentialId: "251110033",
         icon: "fa-check-circle",
         verified: true,
-        verifyLink: "#",
+        verifyLink: "https://drive.google.com/file/d/1M9alRNw2vy3h7q4oyGYv2YRJuxNDGKe3/view?usp=sharing",
         category: ["testing"]
     },
     {
