@@ -131,7 +131,7 @@ const projects = [
         description: "Comprehensive data warehouse built using Medallion Architecture (Bronze, Silver, Gold layers) with SQL Server. Features ETL pipelines, star schema modeling, data cleansing, and analytics for sales data from multiple source systems.",
         tech: ["SQL Server", "ETL", "Data Modeling", "Data Warehouse", "Analytics"],
         icon: "fa-database",
-        link: "https://github.com/DataWithBaraa/sql-data-warehouse-project",
+        link: "https://github.com/ahmedtaha89/sql-data-warehouse-project.git",
         category: ["sql", "etl"]
     },
     {
