@@ -189,39 +189,60 @@ body.dark-mode nav {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: white;
-    padding: 6rem 2rem 4rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
     align-items: center;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    animation: slideInLeft 0.8s ease;
+.hero-content {
+    text-align: left;
+    color: white;
+    z-index: 2;
 }
 
-.hero-content .subtitle {
-    font-size: 1.5rem;
-    color: rgba(255,255,255,0.9);
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    animation: slideInLeft 1s ease;
+    animation: fadeInUp 0.8s ease;
 }
 
-.hero-content .description {
+.hero .subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.hero .description {
     font-size: 1.1rem;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 2rem;
-    animation: slideInLeft 1.2s ease;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInLeft {
@@ -235,11 +256,13 @@ body.dark-mode nav {
     }
 }
 
+/* ===== الجزء المهم - الأزرار جنب بعض ===== */
 .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     animation: slideInLeft 1.4s ease;
+    align-items: center;
 }
 
 .btn {
@@ -250,9 +273,12 @@ body.dark-mode nav {
     transition: all 0.3s;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
+    flex: 0 1 auto;
 }
 
 .btn-primary {
@@ -966,6 +992,23 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
@@ -1009,21 +1052,27 @@ footer {
         left: 0;
     }
 
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .hero h1 {
+        font-size: 2.5rem;
     }
-
-    .hero-content h1 {
-        font-size: 2rem;
+    
+    .hero .subtitle {
+        font-size: 1.3rem;
     }
-
+    
+    .hero .description {
+        font-size: 1rem;
+    }
+    
+    /* الأزرار تحت بعض في الموبايل */
     .hero-buttons {
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
     }
-
-    .social-links {
-        justify-content: center;
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
     }
 
     .hero-visual {
@@ -1041,5 +1090,20 @@ footer {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
