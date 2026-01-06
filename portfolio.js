@@ -135,6 +135,15 @@ const projects = [
         category: ["sql", "etl"]
     },
     {
+    title: "Informatica PowerCenter ETL Tasks",
+    description: "Collection of ETL transformations and data processing tasks using Informatica PowerCenter, including Filter transformations, Router tasks for conditional data routing, and Sequence Number generation for data tracking.",
+    tech: ["Informatica PowerCenter", "ETL", "Data Integration", "Data Transformation"],
+    icon: "fa-database",
+    link: "https://github.com/ahmedtaha89/Informatica-PowerCenter-Tasks",
+    category: ["etl"]
+    }
+    ,
+    {
         title: "Call Center Analytics",
         description: "Analyzed call center data to test operational effectiveness and created visualizations for performance monitoring.",
         tech: ["Power BI", "Excel", "SQL"],
