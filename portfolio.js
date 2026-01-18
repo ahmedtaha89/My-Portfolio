@@ -12,6 +12,16 @@ const certifications = [
     verifyLink: "https://www.udemy.com/certificate/UC-cff4947f-c175-407e-8c5e-bc745537c8ae/",
     category: ["bi", "etl", "sql"]
 },
+ {
+        name: "Introduction to Shell",
+        issuer: "DataCamp",
+        date: "January 2026",
+        credentialId: "45,182,670",
+        icon: "fa-terminal",
+        verified: true,
+        verifyLink: "https://www.datacamp.com/completed/statement-of-accomplishment/course/b57a5909b3088b01cf91972392574cac768ae6c3", // Add verification link if available
+        category: ["shell", "command-line", "linux"]
+    },
     {
         name: "ISTQB Certified Tester Foundation Level",
         issuer: "ISTQB",
