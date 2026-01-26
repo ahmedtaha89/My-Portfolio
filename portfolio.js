@@ -136,6 +136,14 @@ const certifications = [
 
 // Projects data
 const projects = [
+        {
+        title: "Enterprise Data Warehouse (EDWH)",
+        description: "End-to-end enterprise data warehouse implementation using Informatica PowerCenter and Medallion Architecture. Integrates data from CRM and ERP systems with SCD Type 1 & 2 implementations, dimensional modeling, and complete ETL workflows for business analytics.",
+        tech: ["Informatica PowerCenter", "SQL Server", "ETL", "Data Warehouse", "SCD", "Dimensional Modeling"],
+        icon: "fa-building",
+        link: "https://github.com/ahmedtaha89/EnterpriseDWH-InformaticaPowerCenter",
+        category: ["etl", "sql", "bi"]
+    },
     {
         title: "SQL Data Warehouse Project",
         description: "Comprehensive data warehouse built using Medallion Architecture (Bronze, Silver, Gold layers) with SQL Server. Features ETL pipelines, star schema modeling, data cleansing, and analytics for sales data from multiple source systems.",
@@ -545,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadBtn.addEventListener('click', function(e) {
             e.preventDefault();
             
-            const pdfFileName = 'Ahmed Taha BI & ETL Developer CV.pdf';
+            const pdfFileName = 'Ahmed Taha Data Integration Developer CV.pdf';
             
             const link = document.createElement('a');
             link.href = pdfFileName;
