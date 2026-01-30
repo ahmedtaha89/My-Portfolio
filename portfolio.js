@@ -2,6 +2,17 @@
 
 // Certifications data
 const certifications = [
+       {
+        name: "SQL (Intermediate)",
+        issuer: "HackerRank",
+        date: "January 2026", // Update with actual date if different
+        credentialId: "418eec390748",
+        icon: "fa-database",
+        verified: true,
+        verifyLink: "https://www.hackerrank.com/certificates/418eec390748",
+        category: ["sql"]
+    }
+    ,
     {
     name: "Data Warehouse - The Ultimate Guide",
     issuer: "Udemy",
