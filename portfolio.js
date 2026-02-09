@@ -2,6 +2,16 @@
 
 // Certifications data
 const certifications = [
+        {
+        name: "Cloud Data Integration for Developers - 2024/10 Release",
+        issuer: "Informatica",
+        date: "January 2026",
+        credentialId: "",
+        icon: "fa-cloud",
+        verified: true,
+        verifyLink: "https://github.com/ahmedtaha89/Certificates/blob/master/certificate%20Informatica.pdf", 
+        category: ["etl", "cloud","IICS","CDI","IMDC"]
+    },
        {
         name: "SQL (Intermediate)",
         issuer: "HackerRank",
