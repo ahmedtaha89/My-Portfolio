@@ -157,6 +157,14 @@ const certifications = [
 
 // Projects data
 const projects = [
+    {
+        title: "Sales Data Warehouse (Star Schema)",
+        description: "Sales Data Warehouse built on Microsoft SQL Server and loaded via Informatica PowerCenter using a Star Schema model. Features a FactSales table with conformed dimensions (Territory, ShipMethods, Products, Order/Due/Ship Dates), a Bronze staging layer, and full ETL workflows with visual documentation.",
+        tech: ["Informatica PowerCenter", "SQL Server", "ETL", "Data Warehouse", "Star Schema", "Dimensional Modeling"],
+        icon: "fa-chart-line",
+        link: "https://github.com/ahmedtaha89/Sales-DWH-SQL-Server-InformaticaPowerCenter-StarSchema",
+        category: ["etl", "sql", "bi"]
+    },
         {
         title: "Enterprise Data Warehouse (EDWH)",
         description: "End-to-end enterprise data warehouse implementation using Informatica PowerCenter and Medallion Architecture. Integrates data from CRM and ERP systems with SCD Type 1 & 2 implementations, dimensional modeling, and complete ETL workflows for business analytics.",
