@@ -158,6 +158,14 @@ const certifications = [
 // Projects data
 const projects = [
     {
+    title: "Brazilian E-Commerce Data Warehouse",
+    description: "End-to-end SQL Data Warehouse built on Microsoft SQL Server using the Olist Brazilian E-Commerce dataset. Features a medallion architecture with Bronze, Silver, and Gold layers for structured data processing, alongside ETL workflows developed in Informatica PowerCenter to ingest raw data, apply transformations, load the warehouse, and monitor execution through an ETL Audit Log.",
+    tech: ["Informatica PowerCenter", "SQL Server", "ETL", "Data Warehouse", "Medallion Architecture", "Bronze/Silver/Gold Layers"],
+    icon: "fa-database",
+    link: "https://github.com/ahmedtaha89/Brazilian-ecommerce-sql-data-warehouse/tree/master",
+    category: ["etl", "sql", "bi"]
+},
+    {
         title: "Sales Data Warehouse (Star Schema)",
         description: "Sales Data Warehouse built on Microsoft SQL Server and loaded via Informatica PowerCenter using a Star Schema model. Features a FactSales table with conformed dimensions (Territory, ShipMethods, Products, Order/Due/Ship Dates), a Bronze staging layer, and full ETL workflows with visual documentation.",
         tech: ["Informatica PowerCenter", "SQL Server", "ETL", "Data Warehouse", "Star Schema", "Dimensional Modeling"],
