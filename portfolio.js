@@ -2,6 +2,16 @@
 
 // Certifications data
 const certifications = [
+    {
+    name: "Informatica Cloud (IICS) - The Complete Guide 2025 Edition",
+    issuer: "Udemy",
+    date: "March 2026",
+    credentialId: "UC-79bdf33f-4d73-420f-8ba8-28f4540496b1",
+    icon: "fa-cloud",
+    verified: true,
+    verifyLink: "https://ude.my/UC-79bdf33f-4d73-420f-8ba8-28f4540496b1",
+    category: ["etl", "cloud", "IICS", "CDI", "Udemy"]
+},
         {
         name: "Cloud Data Integration for Developers - 2024/10 Release",
         issuer: "Informatica",
